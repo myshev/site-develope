@@ -1,0 +1,43 @@
+# config/doctrine/schema.yml
+
+Benefits: #наши преимущества
+  actAs: { Timestampable: ~ }
+  columns:
+    title:
+      type: string(255)
+      notnull: true
+    text:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    image:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+
+Services: #наши услуги
+  actAs: { Timestampable: ~ }
+  columns:
+    title:
+      type: string(255)
+      notnull: true
+    text:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    image:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false

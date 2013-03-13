@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Benefits
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          benefits
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id:       { label: "ID" }
+        title:    { label: "Название преимущества" }
+        text:     { label: "Текст преимущества" }
+        image:    { label: "Картинка" }
+      list:    ~
+      filter:
+        display:  [title, text]
+      form:
+        display:  [title, text, image]
+      edit:    ~
+      new:     ~
