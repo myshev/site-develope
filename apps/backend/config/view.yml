@@ -9,7 +9,7 @@ default:
     #title:        symfony project
     #description:  symfony project
     #keywords:     symfony, project
-    #language:     en
+    language:     ru
     #robots:       index, follow
 
   stylesheets:    [main.css]
