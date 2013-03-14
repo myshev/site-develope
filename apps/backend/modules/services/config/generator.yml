@@ -13,9 +13,20 @@ generator:
 
     config:
       actions: ~
-      fields:  ~
-      list:    ~
-      filter:  ~
-      form:    ~
-      edit:    ~
-      new:     ~
+      fields:
+        id:       { label: "ID" }
+        title:    { label: "Название услуги" }
+        text:     { label: "Текст услуги" }
+        image:    { label: "Картинка" }
+      list:
+        title: 'Наши услуги'
+        display:  [id, =title, text, _image]
+      filter:
+        display:  [title, text]
+      form:
+        class: BackendServicesForm
+        display:  [title, text, image]
+      edit:
+        title: 'Редиктирование услуги'
+      new:
+        title: 'Создание услуги'

@@ -18,10 +18,15 @@ generator:
         title:    { label: "Название преимущества" }
         text:     { label: "Текст преимущества" }
         image:    { label: "Картинка" }
-      list:    ~
+      list:
+        title: 'Наши преимущества'
+        display:  [id, =title, text, _image]
       filter:
         display:  [title, text]
       form:
+        class: BackendBenefitsForm
         display:  [title, text, image]
-      edit:    ~
-      new:     ~
+      edit:
+        title: 'Редактирование преимущества'
+      new:
+        title: 'Новое преимущество'

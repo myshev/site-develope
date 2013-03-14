@@ -1,0 +1,17 @@
+a {
+	color: #464646;
+}
+
+.clear{float:none; clear:both; line-height:1; font-size:0; width:100%; _width:99%;}
+
+div#menu ul {
+
+}
+	div#menu ul li {
+		float: left;
+		list-style-type: none;
+		margin-right: 20px;
+	}
+		div#menu ul li a {
+			color: #464646;
+		}

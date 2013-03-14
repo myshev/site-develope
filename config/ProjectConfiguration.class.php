@@ -7,8 +7,9 @@ class ProjectConfiguration extends sfProjectConfiguration
 {
 	public function setup()
 	{
-		$this->setWebDir($this->getRootDir().'/www');
+		$this->setWebDir($this->getRootDir() . '/www');
 		$this->enablePlugins('sfDoctrinePlugin');
 
+		$this->enablePlugins('sfDoctrineGuardPlugin');
 	}
 }
