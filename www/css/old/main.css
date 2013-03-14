@@ -1,0 +1,18 @@
+div.timer p {
+	color: #f2f6f5;
+	line-height: 20px;
+	width: 171px;
+	text-align: center;
+	font-size: 20px;
+	margin: 0;
+	text-shadow: 1px 1px 2px black, 0 0 1em red;
+}
+
+div.timer p.line1 {
+	padding-top: 15px;
+}
+
+div.timer p.line2 {
+	font-size: 27px;
+	font-weight: bold;
+}

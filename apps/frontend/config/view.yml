@@ -17,4 +17,5 @@ default:
   javascripts:    []
 
   has_layout:     true
-  layout:         layout
+#  layout:         layout
+  layout:         time_layout
