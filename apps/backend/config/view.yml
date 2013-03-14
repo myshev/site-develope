@@ -6,9 +6,9 @@ default:
     content-type: text/html
 
   metas:
-    #title:        symfony project
-    #description:  symfony project
-    #keywords:     symfony, project
+    title:        Site-develope.ru
+    description:  Site-develope.ru
+    keywords:     Site, develope
     language:     ru
     #robots:       index, follow
 
