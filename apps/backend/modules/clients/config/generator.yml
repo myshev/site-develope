@@ -1,0 +1,39 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           clients
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          clients
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id:               { label: "ID" }
+        name:             { label: "Имя" }
+        phone:            { label: "Телефон" }
+        email:            { label: "E-mail" }
+        price:            { label: "Цена" }
+        ip_address:       { label: "IP адрес" }
+        what_next:        { label: "На чем остановились" }
+        description:      { label: "Описание проекта" }
+        start_dev_date:   { label: "Дата начала разработки" }
+        stop_dev_date:    { label: "Дата начала разработки" }
+        created_at:       { label: "Дата обращения" }
+        updated_at:       { label: "Дата обновления информации" }
+      list:
+        title: 'Список клиентов'
+        display:  [id, =name, phone, email, start_dev_date, stop_dev_date, created_at]
+      filter:
+        display:  [id, =name, phone, email]
+      form:
+        class: BackendClientsForm
+      edit:
+        title: 'Редактирование клиента'
+      new:
+        title: 'Новый клиент'

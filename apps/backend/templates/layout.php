@@ -20,6 +20,7 @@
 			<div id="menu">
 				<hr/>
 				<ul>
+					<li><?php echo link_to('Клиенты', 'clients'); ?></li>
 					<li><?php echo link_to('Наши преимущества', 'benefits') ?></li>
 					<li><?php echo link_to('Наши услуги', 'services') ?></li>
 					<?if($sf_user->isAuthenticated()) {?>

@@ -41,3 +41,51 @@ Services: #наши услуги
       primary: false
       notnull: false
       autoincrement: false
+
+Clients: #обратившиеся клиенты
+  actAs: { Timestampable: ~ }
+  columns:
+    name:
+      type: string(255)
+      notnull: true
+      comment: "Имя"
+    phone:
+      type: string(255)
+      notnull: false
+      comment: "Телефон"
+    email:
+      type: string(255)
+      notnull: false
+      comment: "E-mail"
+    what_next:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+      comment: "На чем остановились с клиентом"
+    description:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+      comment: "Описание проекта"
+    price:
+      type: string(255)
+      notnull: false
+      comment: "Цена проекта"
+    start_dev_date:
+      type: timestamp
+      notnull: false
+      comment: 'Дата начала работы'
+    stop_dev_date:
+      type: timestamp
+      notnull: false
+      comment: 'Дата окончания работы'
+    ip_address:
+      type: string(100)
+      notnull: false
+      comment: "IP адрес"

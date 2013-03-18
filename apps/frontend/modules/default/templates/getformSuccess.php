@@ -18,39 +18,18 @@
 	</script>
 </head>
 <body>
-	<div class="form-order" style="margin: 0 auto; width: 440px; height: 300px;">
-		<h2>Заполните заявку прямо сейчас.</h2>
-		<p>Наш менеджер свяжется с Вами и даст</br>бесплатную консультацию</p>
-		<br/>
-		<form action="<??>" method="post">
-			<div>
-				<span>Имя:</span>
-				<br/>
-				<input type="text" name="name" />
-			</div>
-			<div>
-				<span>Телефон:</span>
-				<br/>
-				<input type="text" name="phone" class="phone-input"/>
-			</div>
-			<div>
-				<span>E-mail:</span>
-				<br/>
-				<input type="text" name="email" class="phone-input"/>
-			</div>
-			<a class="b-btn" href="javascript: return void(0);">
-				<span class="b-btn__title">Оставить заявку</span>
+	<?if ($sf_user->hasFlash('notice')) {?>
+		<div id="close_button">
+			<p class="ok-message"><?=$sf_user->getFlash('notice') ?></p>
+			<a class="b-btn" href="javascript: return void(0);" onClick="parent.$.fn.colorbox.close();">
+				<span class="b-btn__title">Закрыть окно</span>
 			</a>
-			<input type="hidden" name="is_colorbox" value="1" />
-		</form>
-	</div>
-
-	<div id="close_button">
-		<p class="ok-message">"ok-message"</p>
-		<a class="b-btn" href="javascript: return void(0);" onClick="parent.$.fn.colorbox.close();">
-			<span class="b-btn__title">Закрыть окно</span>
-		</a>
-	</div>
+		</div>
+	<?} else {?>
+		<div class="form-order" style="margin: 0 auto; width: 440px; height: 300px;">
+			<?include_partial('default/client_form', array('clientForm'	=> $clientForm, 'router'	=> 'getform'));?>
+		</div>
+	<?}?>
 
 </body>
 </html>

@@ -40,6 +40,10 @@
 
 			$("a[rel='cb_link']").colorbox({width:"600", height:"400", iframe:true, transition:"fade"});
 			$("a[rel='cb_link_footer']").colorbox({width:"600", height:"400", iframe:true, transition:"fade"});
+
+			<?if ($sf_user->hasFlash('notice')) {?>
+				alert('<?=$sf_user->getFlash('notice');?>');
+			<?}?>
 		});
 	</script>
 </head>
@@ -56,7 +60,7 @@
 						+7(904) 349-64-41
 					</p>
 					<p class="phone-slogan">
-						закажи звонок<br/>
+						закажите звонок<br/>
 						по любому вопросу
 					</p>
 				</div>
@@ -65,137 +69,7 @@
 				</a>
 			</div>
 		</div>
-		<div id="header-bottom">
-			<div class="seporator-top"></div>
-			<div id="connecting_people"></div>
-			<div class="clear"></div>
-			<ul class="header-middle-counter">
-				<li class="item-edge">
-					<img src="/uploads/old/19cfa5fd330fb75f5d81148a578f5340.png" />
-				</li>
-				<li>
-					<img class="image2head-middle" src="/uploads/old/2ab57fd95965ceff227d45c5efdaa6d5.png" />
-				</li>
-				<li>
-					<img class="image2head-middle" src="/uploads/old/fefe9c91d4e0c8263b49c9e7d9818410.png" />
-				</li>
-				<li class="item-edge">
-					<img src="/uploads/old/264356ce9296037c6ecdaf863d40007e.png" />
-				</li>
-			</ul>
-			<div class="slider-bloc">
-				<div class="slider" id="slider">
-					<ul>
-						<li>
-							<div class="slider-image-item">
-								<img src="/uploads/old/aeb767aa5904f35ce49f3009c75a6eb7.jpg"/>
-							</div>
-						</li>
-						<li>
-							<div class="slider-image-item">
-								<img src="/uploads/old/aeb767aa5904f35ce49f3009c75a6eb7.jpg"/>
-							</div>
-						</li>
-						<li>
-							<div class="slider-image-item">
-								<img src="/uploads/old/aeb767aa5904f35ce49f3009c75a6eb7.jpg"/>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<div class="form-order">
-					<h2>Заполните заявку прямо сейчас.</h2>
-					<p>Мы обязательно свяжемся с Вами и дадим бесплатную консультацию</p>
-					<?/*if($this->session->flashdata('message_no_send')) {?>
-						<p class="error"><?=$this->session->flashdata('message_no_send')?></p>
-					<?}?>
-					<?if($this->session->flashdata('message_send')) {?>
-						<p class="ok-message"><?=$this->session->flashdata('message_send')?></p>
-					<?}*/?>
-					<form action="<?/*=site_url('main/orderCall');*/?>" method="post">
-						<div>
-							<span>Имя:</span>
-							<br/>
-							<input type="text" name="name" />
-						</div>
-						<div>
-							<span>Телефон:</span>
-							<br/>
-							<input type="text" name="phone" class="phone-input"/>
-						</div>
-						<div>
-							<span>E-mail:</span>
-							<br/>
-							<input type="text" name="email"/>
-						</div>
-						<a class="b-btn" href="javascript: return void(0);">
-										<span class="b-btn__title">
-											  Оставить заявку
-										</span>
-						</a>
-					</form>
-				</div>
-			</div>
-			<div class="seporator-bottom"></div>
-		</div>
-		<div id="content">
-			<div style="width: 100%; height: 10px;"></div>
-			<?php echo $sf_content ?>
-			<div style="width: 100%; height: 10px;"></div>
-		</div>
-		<div id="footer-top">
-			<div class="seporator-top"></div>
-			<div style="width: 100%; height: 40px;"></div>
-			<div class="slider-bloc">
-				<div class="flexslider">
-					<ul class="slides">
-						<li>
-							<div>
-								<img src="/uploads/old/aeb767aa5904f35ce49f3009c75a6eb7.jpg"/>
-							</div>
-						</li>
-						<li>
-							<div>
-								<img src="/uploads/old/aeb767aa5904f35ce49f3009c75a6eb7.jpg"/>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<div class="form-order">
-					<h2>Заполните заявку прямо сейчас.</h2>
-					<p>Мы обязательно свяжемся с Вами и дадим бесплатную консультацию</p>
-					<?/*if($this->session->flashdata('message_no_send')) {?>
-						<p class="error"><?=$this->session->flashdata('message_no_send')?></p>
-					<?}?>
-					<?if($this->session->flashdata('message_send')) {?>
-						<p class="ok-message"><?=$this->session->flashdata('message_send')?></p>
-					<?}*/?>
-					<form action="<?/*=site_url('main/orderCall');*/?>" method="post">
-						<div>
-							<span>Имя:</span>
-							<br/>
-							<input type="text" name="name" />
-						</div>
-						<div>
-							<span>Телефон:</span>
-							<br/>
-							<input type="text" name="phone" class="phone-input"/>
-						</div>
-						<div>
-							<span>E-mail:</span>
-							<br/>
-							<input type="text" name="email"/>
-						</div>
-						<a class="b-btn" href="javascript: return void(0);">
-										<span class="b-btn__title">
-											  Оставить заявку
-										</span>
-						</a>
-					</form>
-				</div>
-			</div>
-			<div class="seporator-bottom"></div>
-		</div>
+		<?php echo $sf_content ?>
 		<div id="footer-bottom">
 			<div style="width: 100%; height: 10px;"></div>
 			<div class="footer-bottom-image">
@@ -213,7 +87,7 @@
 						8 (8634) 69-17-09
 					</p>
 					<p class="phone-slogan">
-						закажи звонок<br/>
+						закажите звонок<br/>
 						по любому вопросу
 					</p>
 				</div>

@@ -304,3 +304,17 @@ p.ok-message {
 	margin-top: 165px;
 	text-align: center;
 }
+
+ul.error_list {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	clear: both;
+	display: inline;
+}
+	ul.error_list li {
+		color: #ff0000;
+		font-size: 13px;
+		line-height: 10px;
+		display: inline;
+	}
