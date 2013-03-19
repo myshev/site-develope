@@ -10,7 +10,8 @@
  */
 class defaultActions extends sfActions
 {
-	var $_flash_message		= 'Ваши контакты сохранены. Скоро мы с Вами свяжемся.';
+	var $_flash_message				= 'Ваши контакты сохранены. Скоро мы с Вами свяжемся.';
+	var $_flash_message_error		= 'Вы допустили ошибку при заполнении полей формы. Попробуйте еще раз.';
 
 	/**
 	 * Executes index action
@@ -30,6 +31,8 @@ class defaultActions extends sfActions
 				$this->clientForm->save();
 				$this->getUser()->setFlash('notice', sprintf($this->_flash_message));
 				$this->redirect('homepage');
+			} else {
+				$this->getUser()->setFlash('notice', sprintf($this->_flash_message_error));
 			}
 		}
 	}
