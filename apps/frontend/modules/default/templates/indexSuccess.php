@@ -21,17 +21,16 @@
 			<ul>
 				<li>
 					<div class="slider-image-item">
-						<img src="/uploads/old/aeb767aa5904f35ce49f3009c75a6eb7.jpg"/>
+						<img src="/uploads/old/234lhjf4hf5j23h4kjdl243k5.jpg"/>
 					</div>
 				</li>
 				<li>
 					<div class="slider-image-item">
-						<img src="/uploads/old/aeb767aa5904f35ce49f3009c75a6eb7.jpg"/>
-					</div>
+						<img src="/uploads/old/asd4565fa5sdfkj4235.jpg"/></div>
 				</li>
 				<li>
 					<div class="slider-image-item">
-						<img src="/uploads/old/aeb767aa5904f35ce49f3009c75a6eb7.jpg"/>
+						<img src="/uploads/old/lkjh2345lkjhlk3h6.jpg"/>
 					</div>
 				</li>
 			</ul>
@@ -99,12 +98,17 @@
 			<ul class="slides">
 				<li>
 					<div>
-						<img src="/uploads/old/aeb767aa5904f35ce49f3009c75a6eb7.jpg"/>
+						<img src="/uploads/old/lkjh2345lkjhlk3h6.jpg"/>
 					</div>
 				</li>
 				<li>
 					<div>
-						<img src="/uploads/old/aeb767aa5904f35ce49f3009c75a6eb7.jpg"/>
+						<img src="/uploads/old/234lhjf4hf5j23h4kjdl243k5.jpg"/>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="/uploads/old/asd4565fa5sdfkj4235.jpg"/>
 					</div>
 				</li>
 			</ul>
