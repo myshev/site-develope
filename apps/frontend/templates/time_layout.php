@@ -85,7 +85,7 @@
 			<div class="phone">
 				<div class="phone-text">
 					<p class="phone-number">
-						8 (8634) 69-17-09
+						+7(904) 349-64-41
 					</p>
 					<p class="phone-slogan">
 						закажите звонок<br/>
