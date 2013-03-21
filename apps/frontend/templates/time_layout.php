@@ -56,7 +56,7 @@
 	<div id="wrapper">
 		<div id="header-top">
 			<div class="logo">
-				<img src="/uploads/old/696471df36f919c4bbcceac5ca0d6316.png" />
+				<img src="/uploads/old/696471df36f919c4bbcceac5ca0d6316.png" title="Разработка сайтов - от визиток до корпоративных порталов"/>
 			</div>
 			<div class="phone">
 				<div class="phone-text">
@@ -68,7 +68,7 @@
 						по любому вопросу
 					</p>
 				</div>
-				<a href="<?=url_for('getform')?>" rel="cb_link" title="Оставить заявку">
+				<a href="<?=url_for('getform')?>" rel="cb_link" title="Заказать звонок">
 					<img src="/uploads/old/514b3ddd0b547cbf55edbf3bcb514bb4.png" />
 				</a>
 			</div>
@@ -83,7 +83,7 @@
 			</div>
 			<div style="width: 100%; height: 15px;"></div>
 			<div class="logo">
-				<img src="/uploads/old/696471df36f919c4bbcceac5ca0d6316.png" />
+				<img src="/uploads/old/696471df36f919c4bbcceac5ca0d6316.png" title="Разработка сайтов - от визиток до корпоративных порталов"/>
 			</div>
 			<div class="phone">
 				<div class="phone-text">
@@ -95,8 +95,8 @@
 						по любому вопросу
 					</p>
 				</div>
-				<a href="<?=url_for('getform')?>" rel="cb_link_footer" title="Оставить заявку">
-					<img src="/uploads/old/514b3ddd0b547cbf55edbf3bcb514bb4.png" />
+				<a href="<?=url_for('getform')?>" rel="cb_link_footer" title="Заказать звонок"">
+					<img src="/uploads/old/514b3ddd0b547cbf55edbf3bcb514bb4.png" title="Заказать звонок"/>
 				</a>
 			</div>
 		</div>
