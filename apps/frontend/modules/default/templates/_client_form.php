@@ -17,7 +17,7 @@
 		<?=$clientForm['phone'];?>
 	</div>
 	<div>
-		<span>E-mail:</span><?=$clientForm['email']->renderError();?>
+		<span>или E-mail:</span><?=$clientForm['email']->renderError();?>
 		<br/>
 		<?=$clientForm['email'];?>
 	</div>

@@ -3,7 +3,7 @@
 <br/>
 <b>Имя:</b> <?=$obClient->getName();?>
 <br/>
-<b>E-mail:</b> <?=$obClient->getEmail();?>
+<b>E-mail:</b> <?=$obClient->getEmail() ? $obClient->getEmail() : 'Не указан' ;?>
 <br/>
-<b>Номер телефона:</b> <?=$obClient->getPhone();?>
+<b>Номер телефона:</b> <?=$obClient->getPhone() ? $obClient->getPhone() : 'Не указан' ;?>
 <br/>
