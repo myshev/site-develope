@@ -4,16 +4,16 @@
 	<div class="clear"></div>
 	<ul class="header-middle-counter">
 		<li class="item-edge">
-			<img src="/uploads/old/19cfa5fd330fb75f5d81148a578f5340.png" title="Наша команда разрабатывает сайты с 2008г"/>
+			<img src="/uploads/old/19cfa5fd330fb75f5d81148a578f5340.png" title="Наша команда разрабатывает сайты с 2008г" alt="Наша команда разрабатывает сайты с 2008г"/>
 		</li>
 		<li>
-			<img class="image2head-middle" src="/uploads/old/2ab57fd95965ceff227d45c5efdaa6d5.png" title="Разработка сайта от 5 дней"/>
+			<img class="image2head-middle" src="/uploads/old/2ab57fd95965ceff227d45c5efdaa6d5.png" title="Разработка сайта от 5 дней" alt="Разработка сайта от 5 дней"/>
 		</li>
 		<li>
-			<img class="image2head-middle" src="/uploads/old/fefe9c91d4e0c8263b49c9e7d9818410.png" title="Стоимость работы от 12 000 руб"/>
+			<img class="image2head-middle" src="/uploads/old/fefe9c91d4e0c8263b49c9e7d9818410.png" title="Стоимость работы от 12 000 руб" alt="Стоимость работы от 12 000 руб"/>
 		</li>
 		<li class="item-edge">
-			<img src="/uploads/old/264356ce9296037c6ecdaf863d40007e.png" title="Гарантия качества 100%"/>
+			<img src="/uploads/old/264356ce9296037c6ecdaf863d40007e.png" title="Гарантия качества 100%" alt="Гарантия качества 100%"/>
 		</li>
 	</ul>
 	<div class="slider-bloc">
@@ -56,7 +56,7 @@
 				<div class="news_line">
 					<div class="news_image">
 						<?if($benefit->getImage() != '' && file_exists($_SERVER['DOCUMENT_ROOT'].'/uploads/benefits/'.$benefit->getImage())) {?>
-							<img src="/uploads/benefits/<?=$benefit->getImage();?>" />
+							<img src="/uploads/benefits/<?=$benefit->getImage();?>" title="<?=$benefit->getTitle();?>" alt="<?=$benefit->getTitle();?>"/>
 						<?}?>
 					</div>
 					<h3><?=$benefit->getTitle();?></h3>
@@ -76,7 +76,7 @@
 				<div class="news_line">
 					<div class="news_image">
 						<?if($service->getImage() != '' && file_exists($_SERVER['DOCUMENT_ROOT'].'/uploads/services/'.$service->getImage())) {?>
-							<img src="/uploads/services/<?=$service->getImage();?>" />
+							<img src="/uploads/services/<?=$service->getImage();?>" title="<?=$service->getTitle();?>" alt="<?=$service->getTitle();?>"/>
 						<?}?>
 					</div>
 					<h3><?=$service->getTitle();?></h3>
