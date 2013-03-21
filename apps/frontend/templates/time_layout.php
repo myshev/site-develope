@@ -77,9 +77,7 @@
 		<div id="footer-bottom">
 			<div style="width: 100%; height: 10px;"></div>
 			<div class="footer-bottom-image">
-				<?/*if(isset($footer_image) && $footer_image->image != '' && file_exists($_SERVER['DOCUMENT_ROOT'].'/upload/data_image/'.$footer_image->image)) {?>
-					<img src="/upload/data_image/<?=$footer_image->image;?>" />
-				<?}*/?>
+				<img src="/uploads/old/sdfgiouuhw34itgi8osw34.jpg" />
 			</div>
 			<div style="width: 100%; height: 15px;"></div>
 			<div class="logo">
