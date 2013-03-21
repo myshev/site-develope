@@ -1,2 +1,5 @@
-#User-agent: *
-Disallow all
+User-agent: Yandex
+Allow: /
+
+User-agent: *
+Allow: /
