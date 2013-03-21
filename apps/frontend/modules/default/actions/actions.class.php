@@ -28,7 +28,17 @@ class defaultActions extends sfActions
 		if($request->getPostParameter($this->clientForm->getName())) {
 			$this->clientForm->bind($request->getPostParameter($this->clientForm->getName()));
 			if($this->clientForm->isValid()) {
-				$this->clientForm->save();
+				$obClient	= $this->clientForm->save();
+
+				mailHelper::send(
+					sfConfig::get('app_mail_moderator'),
+					'Новая заявка. Site-develope.ru',
+					'client_apply',
+					array(
+						'obClient' => $obClient
+					)
+				);
+
 				$this->getUser()->setFlash('notice', sprintf($this->_flash_message));
 				$this->redirect('homepage');
 			} else {
@@ -43,7 +53,17 @@ class defaultActions extends sfActions
 		if($request->getPostParameter($this->clientForm->getName())) {
 			$this->clientForm->bind($request->getPostParameter($this->clientForm->getName()));
 			if($this->clientForm->isValid()) {
-				$this->clientForm->save();
+				$obClient	= $this->clientForm->save();
+
+				mailHelper::send(
+					sfConfig::get('app_mail_moderator'),
+					'Новая заявка. Site-develope.ru',
+					'client_apply',
+					array(
+						'obClient' => $obClient
+					)
+				);
+
 				$this->getUser()->setFlash('notice', sprintf($this->_flash_message));
 				$this->redirect('getform');
 			}

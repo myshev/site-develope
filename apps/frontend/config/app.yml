@@ -3,3 +3,12 @@
 
 # default values
 #all:
+all:
+  main:
+    host: site-develope.ru
+  mail:
+    from: support@site-develope.ru
+    fromname: Site-develope.ru
+    moderator: myshev@gmail.com
+    support: welcome@site-develope.ru
+    moderator: myshev@gmail.com
