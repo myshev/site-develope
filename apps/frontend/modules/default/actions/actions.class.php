@@ -26,24 +26,7 @@ class defaultActions extends sfActions
 		$this->oServices 			= ServicesTable::getInstance()->findAll();
 
 		if($request->getPostParameter($this->clientForm->getName())) {
-			$this->clientForm->bind($request->getPostParameter($this->clientForm->getName()));
-			if($this->clientForm->isValid()) {
-				$obClient	= $this->clientForm->save();
-
-				mailHelper::send(
-					sfConfig::get('app_mail_moderator'),
-					'Новая заявка. Site-develope.ru',
-					'client_apply',
-					array(
-						'obClient' => $obClient
-					)
-				);
-
-				$this->getUser()->setFlash('notice', sprintf($this->_flash_message));
-				$this->redirect('homepage');
-			} else {
-				$this->getUser()->setFlash('notice', sprintf($this->_flash_message_error));
-			}
+			$this->processFormClient($this->clientForm, $request->getPostParameter($this->clientForm->getName()), 'homepage');
 		}
 	}
 
@@ -51,24 +34,32 @@ class defaultActions extends sfActions
 		$this->clientForm			= new FrontendClientsForm();
 
 		if($request->getPostParameter($this->clientForm->getName())) {
-			$this->clientForm->bind($request->getPostParameter($this->clientForm->getName()));
-			if($this->clientForm->isValid()) {
-				$obClient	= $this->clientForm->save();
-
-				mailHelper::send(
-					sfConfig::get('app_mail_moderator'),
-					'Новая заявка. Site-develope.ru',
-					'client_apply',
-					array(
-						'obClient' => $obClient
-					)
-				);
-
-				$this->getUser()->setFlash('notice', sprintf($this->_flash_message));
-				$this->redirect('getform');
-			}
+			$this->processFormClient($this->clientForm, $request->getPostParameter($this->clientForm->getName()), 'getform');
 		}
 
 		$this->setLayout('time_form_layout');
+	}
+
+	private function processFormClient($oForm, $oData, $redirectRouter = '') {
+		$oForm->bind($oData);
+		if($oForm->isValid()) {
+			$obClient	= $oForm->save();
+
+			mailHelper::send(
+				sfConfig::get('app_mail_moderator'),
+				'Новая заявка. Site-develope.ru',
+				'client_apply',
+				array(
+					'obClient' => $obClient
+				)
+			);
+
+			$obClient->setIpAddress($_SERVER['REMOTE_ADDR']);
+			$obClient->save();
+
+			$this->getUser()->setFlash('notice', sprintf($this->_flash_message));
+			if($redirectRouter != '')
+				$this->redirect($redirectRouter);
+		}
 	}
 }
