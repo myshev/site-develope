@@ -4,16 +4,16 @@
 	<div class="clear"></div>
 	<ul class="header-middle-counter">
 		<li class="item-edge">
-			<img src="/uploads/old/19cfa5fd330fb75f5d81148a578f5340.png" />
+			<img src="/uploads/old/19cfa5fd330fb75f5d81148a578f5340.png" title="Наша команда разрабатывает сайты с 2008г"/>
 		</li>
 		<li>
-			<img class="image2head-middle" src="/uploads/old/2ab57fd95965ceff227d45c5efdaa6d5.png" />
+			<img class="image2head-middle" src="/uploads/old/2ab57fd95965ceff227d45c5efdaa6d5.png" title="Разработка сайта от 5 дней"/>
 		</li>
 		<li>
-			<img class="image2head-middle" src="/uploads/old/fefe9c91d4e0c8263b49c9e7d9818410.png" />
+			<img class="image2head-middle" src="/uploads/old/fefe9c91d4e0c8263b49c9e7d9818410.png" title="Стоимость работы от 12 000 руб"/>
 		</li>
 		<li class="item-edge">
-			<img src="/uploads/old/264356ce9296037c6ecdaf863d40007e.png" />
+			<img src="/uploads/old/264356ce9296037c6ecdaf863d40007e.png" title="Гарантия качества 100%"/>
 		</li>
 	</ul>
 	<div class="slider-bloc">
@@ -51,7 +51,7 @@
 	<div style="width: 100%; height: 10px;"></div>
 	<?if($oBenefits->count()) {?>
 		<div class="news_list">
-			<div class="body_text">5 ключевых проблем, с которыми сталкиваются 95% клиентов</div>
+			<div class="body_text">5 ключевых проблем, с которыми сталкиваются большинство клиентов</div>
 			<?foreach($oBenefits as $benefit) {?>
 				<div class="news_line">
 					<div class="news_image">

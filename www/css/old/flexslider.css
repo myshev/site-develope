@@ -59,7 +59,7 @@ html[xmlns] .slides {display: block;}
 	right: 0;
 	opacity: 1;
 	/*background-position: 100% 0;*/
-	background: url("../../images/old/slider/btn_prev.gif") no-repeat scroll 0 0 transparent;
+	background: url("../../images/old/slider/btn_next.gif") no-repeat scroll 0 0 transparent;
 	/*right: -36px;*/ }
 .flex-direction-nav .flex-prev {
 	opacity: 1;

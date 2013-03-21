@@ -2,6 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title>Разработка сайтов - от визиток до корпоративных порталов</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="разработка сайтов, сайт визитка, корпоративный портал, разработка сайта дешево">
+	<meta name="description" content="Разработка сайтов - от визиток до корпоративных порталов">
 	<?//php include_http_metas() ?>
 	<?//php include_metas() ?>
 	<?//php include_title() ?>
