@@ -26,7 +26,9 @@ class defaultActions extends sfActions
 		$this->oServices 			= ServicesTable::getInstance()->findAll();
 
 		if($request->getPostParameter($this->clientForm->getName())) {
-			$this->processFormClient($this->clientForm, $request->getPostParameter($this->clientForm->getName()), 'homepage');
+			if(!$this->processFormClient($this->clientForm, $request->getPostParameter($this->clientForm->getName()), 'homepage')) {
+				$this->getUser()->setFlash('notice', sprintf($this->_flash_message_error));
+			}
 		}
 	}
 
@@ -60,6 +62,8 @@ class defaultActions extends sfActions
 			$this->getUser()->setFlash('notice', sprintf($this->_flash_message));
 			if($redirectRouter != '')
 				$this->redirect($redirectRouter);
+		} else {
+			return false;
 		}
 	}
 }
