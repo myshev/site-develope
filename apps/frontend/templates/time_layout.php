@@ -61,7 +61,7 @@
 			<div class="phone">
 				<div class="phone-text">
 					<p class="phone-number">
-						+7(904) 349-64-41
+						+7 (989) 726-0465
 					</p>
 					<p class="phone-slogan">
 						закажите звонок<br/>
@@ -86,7 +86,7 @@
 			<div class="phone">
 				<div class="phone-text">
 					<p class="phone-number">
-						+7(904) 349-64-41
+						+7 (989) 726-0465
 					</p>
 					<p class="phone-slogan">
 						закажите звонок<br/>
