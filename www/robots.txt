@@ -1,5 +1,5 @@
 User-agent: Yandex
-Allow: /
+Disallow: /getform
 
 User-agent: *
-Allow: /
+Disallow: /getform
