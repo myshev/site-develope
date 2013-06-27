@@ -5,6 +5,6 @@ all:
   doctrine:
     class: sfDoctrineDatabase
     param:
-      dsn:      mysql:host=78.24.217.78;dbname=site-develope
+      dsn:      mysql:host=188.120.238.9;dbname=site-develope
       username: sitedevelope
       password: cL7uSk7A
